@@ -5,17 +5,11 @@ SECTION = "bootloaders"
 LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://license.rst;md5=1dd070c98a281d18d9eefd938729b031"
 
-#--------------------
-# gitee
-#--------------------
-#SRC_URI += "git://gitee.com/lichang70/stm32mp15xc-tf-a.git;protocol=https;branch=stm32mp-ya15xc"
-#SRCREV= "4c7f691f2d23512c69701ee2b6fb1bfa51f64862"
-
 #-------------------
 # github
 #-------------------
 SRC_URI += "git://github.com/MYiR-Dev/myir-st-arm-trusted-firmware.git;protocol=https;branch=develop"
-SRCREV= "10e3072aab15c285c273171b2c1332600801dead"
+SRCREV= "91c2caccab7464446206b9b72557118e4c19e868"
 
 
 TF_VERSION = "2.2"
@@ -29,18 +23,11 @@ S = "${WORKDIR}/git"
 # ---------------------------------
 BBCLASSEXTEND = "devupstream:target"
 
-#--------------------
-# gitee
-#--------------------
-#SRC_URI_class-devupstream ="git://gitee.com/lichang70/stm32mp15xc-tf-a.git;protocol=https;branch=stm32mp-ya15xc"
-#SRCREV_class-devupstream ="4c7f691f2d23512c69701ee2b6fb1bfa51f64862"
-
-
 #-------------------
 # github
 #-------------------
 SRC_URI_class-devupstream ="git://github.com/MYiR-Dev/myir-st-arm-trusted-firmware.git;protocol=https;branch=develop"
-SRCREV_class-devupstream ="10e3072aab15c285c273171b2c1332600801dead"
+SRCREV_class-devupstream ="91c2caccab7464446206b9b72557118e4c19e868"
 
 
 

@@ -95,7 +95,7 @@ STM32MP_VENDORFS_MOUNTPOINT ?= "/vendor"
 
 # Define image partition size (supposed to be set as max size in image recipe)
 # Proposed value for bootfs is 64MB   #myir 20MB
-BOOTFS_PARTITION_SIZE ?= "20480"
+BOOTFS_PARTITION_SIZE ?= "15360"
 # Proposed value for rootfs should fit our highest constraint: NAND size (1GiB)
 # For optee bootscheme we have the maximum partitions:
 #   FSBL1 + SSBL + SSBL2 + TEEH + TEED + TEEX + Multivolume UBI = NAND size
@@ -125,6 +125,11 @@ VENDORFS_PARTITION_SIZE ?= "${VENDORFS_MYIR_SIZE}"
 ST_BOOTFS   ?= "${ST_BOOTFS_ENABLE}"
 ST_VENDORFS ?= "${ST_VENDORFS_ENABLE}"
 ST_USERFS   ?= "${ST_USERFS_ENABLE}"
+
+#ST_BOOTFS   ?= "1"
+#ST_VENDORFS ?= "1"
+#ST_USERFS   ?= "1"
+
 
 # Partitions configuration
 PARTITIONS_CONFIG += "${@bb.utils.contains('ST_BOOTFS', '1', 'bootfs', '', d)}"
