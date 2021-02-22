@@ -27,6 +27,8 @@ SRC_URI = " \
 	file://ip-up \
 	file://modeset \
 	file://quectel-CM \
+	file://yavta \
+	file://uvc_stream \
           "
 S_G = "${WORKDIR}"
 
@@ -43,6 +45,8 @@ do_install () {
       install -m 0777 ${S_G}/myd_ya157c_all ${D}/usr/bin/
       install -m 0777 ${S_G}/quectel* ${D}/etc/ppp/peers/
       install -m 0777 ${S_G}/quectel-CM ${D}/usr/bin/
+      install -m 0777 ${S_G}/yavta ${D}/usr/bin/
+      install -m 0777 ${S_G}/uvc_stream ${D}/usr/bin/
       
 }
 

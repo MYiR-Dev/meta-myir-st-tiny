@@ -266,8 +266,8 @@ PACKAGE_CLASSES = "package_deb"
 # To enable archiver for recipes that are configured
 #ST_ARCHIVER_ENABLE = "1"
 
-ACCEPT_EULA_myir = "1"
-#ACCEPT_EULA_myir-tiny ="1"
+#ACCEPT_EULA_myir = "1"
+ACCEPT_EULA_myir-ya157c-t ="1"
 
 # Setup environment for builds binary reproducibility
 INHERIT += "reproducible_build"

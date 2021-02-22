@@ -15,6 +15,10 @@ IMAGE_FEATURES += "\
     splash              \
     "
 
+IMAGE_INSTALL_append = " \
+			myd-ya157c \
+			"
+
 #
 # INSTALL addons
 #

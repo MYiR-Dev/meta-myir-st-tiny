@@ -15,7 +15,7 @@ _SUPPORTED_UBUNTU_RELEASE="16.04 18.04"
 # Set default layer root
 #
 if [ -z "$META_LAYER_ROOT" ]; then
-    _META_LAYER_ROOT=layers/meta-st
+    _META_LAYER_ROOT=layers/meta-myir-st-tiny
 else
     _META_LAYER_ROOT=$META_LAYER_ROOT
 fi
