@@ -9,7 +9,7 @@ LIC_FILES_CHKSUM = "file://license.rst;md5=1dd070c98a281d18d9eefd938729b031"
 # github
 #-------------------
 SRC_URI += "git://github.com/MYiR-Dev/myir-st-arm-trusted-firmware.git;protocol=https;branch=develop"
-SRCREV= "86d2b8a0f215808ccc3205edf6ee430a76c052f6"
+SRCREV= "2681164a78fb3b21a682a9314ddf4000c5070b8c"
 
 
 TF_VERSION = "2.2"
@@ -27,7 +27,7 @@ BBCLASSEXTEND = "devupstream:target"
 # github
 #-------------------
 SRC_URI_class-devupstream ="git://github.com/MYiR-Dev/myir-st-arm-trusted-firmware.git;protocol=https;branch=develop"
-SRCREV_class-devupstream ="86d2b8a0f215808ccc3205edf6ee430a76c052f6"
+SRCREV_class-devupstream ="2681164a78fb3b21a682a9314ddf4000c5070b8c"
 
 
 

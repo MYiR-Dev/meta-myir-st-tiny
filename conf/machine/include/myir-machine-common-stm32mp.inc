@@ -55,7 +55,7 @@ STM32MP_DT_FILES_EV ??= ""
 STM32MP_DT_FILES_YA15XC-T ??= ""
 
 # for myir myd-ya15xc-t uboot dts
-STM32MP_DT_FILE_YA15XC-T = "stm32mp15xc-ya151c-256d-t stm32mp15xc-ya157c-512d-t"
+STM32MP_DT_FILE_YA15XC-T = "stm32mp15xc-ya151c-256d-t stm32mp15xc-ya151c-512d-t stm32mp15xc-ya157c-512d-t"
 
 
 # Set default supported device tree list
@@ -320,7 +320,7 @@ UBOOT_CONFIG[trusted] = "stm32mp15_trusted_defconfig,,u-boot.stm32"
 UBOOT_CONFIG[optee]   = "stm32mp15_trusted_defconfig,,u-boot.stm32"
 
 # List of U-Boot device tree to use
-UBOOT_DEVICETREE = "stm32mp15xc-ya151c-256d-t stm32mp15xc-ya157c-512d-t"
+UBOOT_DEVICETREE = "stm32mp15xc-ya151c-256d-t stm32mp15xc-ya151c-512d-t stm32mp15xc-ya157c-512d-t"
 #UBOOT_DEVICETREE = "${STM32MP_DEVICETREE}"
 
 # Define u-boot splashscreen file naming
@@ -351,7 +351,7 @@ tfaconfig_env[vardeps] += "${@bb.utils.contains('TF_A_CONFIG', 'optee', 'TF_A_CO
 tfaconfig_env[vardeps] += "${@bb.utils.contains('TF_A_CONFIG', 'trusted', 'TF_A_CONFIG_trusted', '', d)}"
 
 # List of TF-A device tree to use
-TF_A_DEVICETREE = "stm32mp15xc-ya151c-256d-t stm32mp15xc-ya157c-512d-t"
+TF_A_DEVICETREE = "stm32mp15xc-ya151c-256d-t stm32mp15xc-ya151c-512d-t stm32mp15xc-ya157c-512d-t"
 
 # =========================================================================
 # optee

@@ -17,9 +17,9 @@ S = "${WORKDIR}/git"
 BBCLASSEXTEND = "devupstream:target"
 
 SRC_URI += " \
-      git://github.com.cnpmjs.org/MYiR-Dev/myir-st-linux.git;protocol=https;branch=develop"
+      git://github.com/MYiR-Dev/myir-st-linux.git;protocol=https;branch=develop"
 
-SRCREV= "237aa59cf9be17047165eecf14c59597c2cf30e6"
+SRCREV= "c76a6ca49ffe35d255e6a6db3fd263013cc90708"
 
 
 #PV = "${LINUX_VERSION}+${LINUX_SUBVERSION}+${SRCPV}"
@@ -47,8 +47,9 @@ include ${@oe.utils.ifelse(d.getVar('ST_ARCHIVER_ENABLE') == '1', 'linux-myir-ar
 KERNEL_DEFCONFIG        = "myc-ya157c_defconfig"
 #KERNEL_CONFIG_FRAGMENTS = "${@bb.utils.contains('KERNEL_DEFCONFIG', 'myc-ya157c_defconfig', '${S}/arch/arm/configs/fragment-01-multiv7_cleanup.config', '', d)}"
 KERNEL_CONFIG_FRAGMENTS += "${@bb.utils.contains('KERNEL_DEFCONFIG', 'myc-ya157c_defconfig', '${S}/arch/arm/configs/fragment-02-multiv7_addons.config', '', d)}"
-#KERNEL_CONFIG_FRAGMENTS += "${@bb.utils.contains('KERNEL_DEFCONFIG', 'myc-ya157c_defconfig', '${WORKDIR}/fragment.config', '', d)}"
+KERNEL_CONFIG_FRAGMENTS += "${@bb.utils.contains('KERNEL_DEFCONFIG', 'myc-ya157c_defconfig', '${WORKDIR}/fragments/5.4/fragment-01-kernel.config', '', d)}"
 
+SRC_URI += "file://${LINUX_VERSION}/fragment-01-kernel.config;subdir=fragments"
 
 # -------------------------------------------------------------
 # Kernel Args

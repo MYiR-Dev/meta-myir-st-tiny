@@ -15,6 +15,14 @@ PACKAGES = "\
 
 RDEPENDS_packagegroup-framework-sample-qt-extra = "\
     \
+    qtdeclarative                   \
+    qtdeclarative-qmlplugins        \
+    qtdeclarative-tools             \
+    \
+    qtgraphicaleffects-qmlplugins   \
+    \
+    qtscript                        \
+    \
     qt3d                        \
     qt3d-qmlplugins             \
     \
@@ -40,8 +48,10 @@ RDEPENDS_packagegroup-framework-sample-qt-extra = "\
     qtlocation                  \
     qtlocation-plugins          \
     qtlocation-qmlplugins       \
-    qtvirtualkeyboard		\
+    qtvirtualkeyboard           \
     "
+
+
 
 SUMMARY_packagegroup-framework-sample-qt-extra-examples = "Framework sample qt extra components for examples"
 RDEPENDS_packagegroup-framework-sample-qt-extra-examples = "\

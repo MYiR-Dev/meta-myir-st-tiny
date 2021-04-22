@@ -7,7 +7,7 @@ inherit core-image
 
 IMAGE_LINGUAS = "en-us"
 
-REQUIRED_DISTRO_FEATURES = "wayland"
+#REQUIRED_DISTRO_FEATURES = "wayland"
 
 IMAGE_FEATURES += "\
     package-management  \
@@ -17,6 +17,7 @@ IMAGE_FEATURES += "\
 
 IMAGE_INSTALL_append = " \
 			myd-ya157c \
+			qt-demo \
 			"
 
 #
@@ -30,9 +31,5 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     \
     packagegroup-framework-core  \
     \
-    packagegroup-framework-tools  \
-    \
-    packagegroup-framework-core-extra \
-    ${@bb.utils.contains('COMBINED_FEATURES', 'optee', 'packagegroup-optee-core', '', d)}   \
-    ${@bb.utils.contains('COMBINED_FEATURES', 'optee', 'packagegroup-optee-test', '', d)}   \
+    packagegroup-framework-sample-qt  \
     "

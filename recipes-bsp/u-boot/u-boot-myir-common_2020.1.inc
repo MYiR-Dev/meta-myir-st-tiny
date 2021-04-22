@@ -24,7 +24,7 @@ COMPATIBLE_MACHINE = "(stm32mpcommon)"
 #-----------------
 SRC_URI += " \
         git://github.com/MYiR-Dev/myir-st-u-boot.git;protocol=https;branch=develop"
-SRCREV= "486a4c8de5760714937d37f9e813a6d95eb5a654"
+SRCREV= "08986fa2e9fa07f3daf42a45feea8f54c70a6e5d"
 
 
 U_BOOT_VERSION = "2020.1"
@@ -47,7 +47,7 @@ BBCLASSEXTEND = "devupstream:target"
 # github
 #-----------------
 SRC_URI_class-devupstream = "git://github.com/MYiR-Dev/myir-st-u-boot.git;protocol=https;branch=develop"
-SRCREV= "486a4c8de5760714937d37f9e813a6d95eb5a654"
+SRCREV= "08986fa2e9fa07f3daf42a45feea8f54c70a6e5d"
 
 SRCREV_FORMAT_class-devupstream = "uboot"
 PV_class-devupstream = "${U_BOOT_VERSION}+github+${SRCPV}"

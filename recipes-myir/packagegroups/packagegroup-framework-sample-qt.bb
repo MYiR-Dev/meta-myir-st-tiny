@@ -19,6 +19,25 @@ RDEPENDS_packagegroup-framework-sample-qt = "\
     qtbase-plugins                  \
     qtbase-tools                    \
     \
+    qtmultimedia                    \
+    qtmultimedia-plugins            \
+    qtmultimedia-qmlplugins         \
+    \
+    qtquickcontrols             \
+    qtquickcontrols-qmlplugins  \
+    qtquickcontrols2            \
+    qtquickcontrols2-qmlplugins \
+    \
+    qtvirtualkeyboard           \
+    openstlinux-qt-eglfs        \
+    "
+
+RDEPENDS_packagegroup-framework-sample-qt-full = "\
+    qtbase                          \
+    liberation-fonts                \
+    qtbase-plugins                  \
+    qtbase-tools                    \
+    \
     qtdeclarative                   \
     qtdeclarative-qmlplugins        \
     qtdeclarative-tools             \
@@ -33,6 +52,7 @@ RDEPENDS_packagegroup-framework-sample-qt = "\
     \
     openstlinux-qt-eglfs            \
     "
+
 
 SUMMARY_packagegroup-framework-sample-qt-examples = "Framework sample qt components for examples"
 RDEPENDS_packagegroup-framework-sample-qt-examples = "\

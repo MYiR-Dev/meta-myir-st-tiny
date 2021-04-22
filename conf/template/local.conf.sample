@@ -267,7 +267,7 @@ PACKAGE_CLASSES = "package_deb"
 #ST_ARCHIVER_ENABLE = "1"
 
 #ACCEPT_EULA_myir = "1"
-ACCEPT_EULA_myir-ya157c-t ="1"
+#ACCEPT_EULA_myir-ya157c-t ="1"
 
 # Setup environment for builds binary reproducibility
 INHERIT += "reproducible_build"

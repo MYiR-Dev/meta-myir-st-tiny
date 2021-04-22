@@ -17,8 +17,6 @@ SRC_URI = " \
 	    file://fonts \
 	    file://files \
 	    file://Capture \
-	    file://Music \
-	    file://Video \
 	    file://ecg \
 	    file://mxapp2 \
 	    file://lib \
@@ -33,9 +31,7 @@ do_install () {
       install -d ${D}/usr/lib/
       install -d ${D}/home/
       install -d ${D}/usr/share/myir/
-      install -d ${D}/usr/share/myir/Music/
       install -d ${D}/usr/share/myir/Capture/
-      install -d ${D}/usr/share/myir/Video/
 
       cp -r ${S_G}/start.sh ${D}/usr/bin/
       install -m 0644 ${S_G}/myir.service ${D}/lib/systemd/system/
@@ -45,9 +41,7 @@ do_install () {
       cp -r ${S_G}/mxapp2 ${D}/home/
       cp -r ${S_G}/lib/* ${D}/usr/lib/
       cp -r ${S_G}/ecg/* ${D}/usr/share/myir/
-      cp -r ${S_G}/Music/* ${D}/usr/share/myir/Music/
       cp -r ${S_G}/Capture/* ${D}/usr/share/myir/Capture/
-      cp -r ${S_G}/Video/* ${D}/usr/share/myir/Video/
 
 }
 
@@ -59,9 +53,7 @@ FILES_${PN} = "\
 	     /usr/lib/ \
 	     /home/ \
 	     /usr/share/myir/ \
-             /usr/share/myir/Music/ \
 	     /usr/share/myir/Capture/ \
-	    /usr/share/myir/Video/ \
              "
 
 #For dev packages only
