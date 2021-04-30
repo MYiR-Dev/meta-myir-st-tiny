@@ -52,6 +52,8 @@ RDEPENDS_packagegroup-framework-tools-core = "\
     cracklib        \
     db              \
     sqlite3         \
+    tslib-calibrate \
+    pointercal      \
     "
 
 SUMMARY_packagegroup-framework-tools-kernel = "Framework tools components for kernel"

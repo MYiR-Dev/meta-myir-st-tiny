@@ -164,10 +164,10 @@ MULTIUBI_BUILD += "${@bb.utils.contains('BOOTDEVICE_LABELS', 'nand-2-256', 'nand
 #MKUBIFS_ARGS_nand_2_256 = "--min-io-size 4096 --leb-size 253952 --max-leb-cnt 4096 --space-fixup"
 #UBINIZE_ARGS_nand_2_256 = "--min-io-size 4096 --peb-size 256KiB"
 #####################################################################
-# 512MB nand for myir
-#MKUBIFS_ARGS_nand_2_256 = "-F -m 2048 -e 126976 -c 4040 --space-fixup"
+# 256MB nand for myir
+#MKUBIFS_ARGS_nand_2_256 = "-F -m 2048 -e 124KiB -c 2048 --space-fixup"
 #UBINIZE_ARGS_nand_2_256 = "-m 2048 -p 128KiB"
-MKUBIFS_ARGS_nand_2_256 = "--min-io-size 2048 --leb-size 126976 --max-leb-cnt 4040 --space-fixup"
+MKUBIFS_ARGS_nand_2_256 = "--min-io-size 2048 --leb-size 126976 --max-leb-cnt 2047 --space-fixup"
 UBINIZE_ARGS_nand_2_256 = "--min-io-size 2048 --peb-size 128KiB"
 
 ####################################################################
